@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="back1" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegistrationController">
+   <children>
+      <TextField fx:id="customerName" layoutX="140.0" layoutY="147.0" promptText="Name" />
+      <PasswordField fx:id="customerPassword" layoutX="140.0" layoutY="201.0" promptText="Password" />
+      <TextArea fx:id="customerAddress" layoutX="141.0" layoutY="261.0" prefHeight="43.0" prefWidth="149.0" promptText="Address" />
+      <TextField fx:id="customerEmail" layoutX="504.0" layoutY="148.0" promptText="Email Id" />
+      <Label fx:id="customerRegDate" layoutX="553.0" layoutY="305.0" prefHeight="21.0" prefWidth="200.0" />
+      <Button id="login" fx:id="btnSubmit" layoutX="203.0" layoutY="445.0" mnemonicParsing="false" onAction="#submit" prefHeight="50.0" prefWidth="107.0" text="Submit" />
+      <TextField fx:id="customerContactNumber" layoutX="504.0" layoutY="201.0" promptText="Contact Number" />
+      <Label id="mainTitle" fx:id="pane1" layoutX="203.0" layoutY="22.0" prefHeight="68.0" prefWidth="554.0" text="Customer Registration Form" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="152.0" text="UserName:" />
+      <Label layoutX="20.0" layoutY="205.0" text="Password:" />
+      <Label layoutX="27.0" layoutY="275.0" text="Address:" />
+      <Label layoutX="404.0" layoutY="151.0" text="Email Id:" />
+      <Label layoutX="30.0" layoutY="340.0" text="Country:" />
+      <Label layoutX="411.0" layoutY="274.0" text="State:" />
+      <Label layoutX="385.0" layoutY="198.0" text="Contact Number" />
+      <ImageView fitHeight="84.0" fitWidth="86.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="95.0" fitWidth="125.0" layoutX="20.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="107.0" fitWidth="200.0" layoutX="35.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/bigstock-Registration-Icon-91854737-300x300.jpg.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="zipcode" layoutX="505.0" layoutY="338.0" promptText="Zip Code" />
+      <Label layoutX="402.0" layoutY="342.0" text="Zip Code" />
+      <TextField fx:id="customerCountry" layoutX="141.0" layoutY="338.0" />
+      <TextField fx:id="customerState" layoutX="505.0" layoutY="270.0" />
+   </children>
+</AnchorPane>

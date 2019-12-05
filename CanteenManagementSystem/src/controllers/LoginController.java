@@ -13,11 +13,11 @@ import models.LoginModel;
 public class LoginController {
 
 	@FXML 
-	private TextField txtUsername;
+	private TextField txtEmail;
 
 	@FXML
 	private PasswordField txtPassword;
-
+	
 	@FXML
 	private Label lblError;
 
@@ -28,11 +28,11 @@ public class LoginController {
 	public void login() {
 
 		lblError.setText("");
-		String username = this.txtUsername.getText();
+		String email = this.txtEmail.getText();
 		String password = this.txtPassword.getText();
 
 		// Validations
-		if (username == null || username.trim().equals("")) {
+		if (email == null || email.trim().equals("")) {
 			lblError.setText("Username Cannot be empty or spaces");
 			return;
 		}
@@ -40,19 +40,19 @@ public class LoginController {
 			lblError.setText("Password Cannot be empty or spaces");
 			return;
 		}
-		if (username == null || username.trim().equals("") && (password == null || 
+		if (email == null || email.trim().equals("") && (password == null || 
 			password.trim().equals(""))) {
 			lblError.setText("User name / Password Cannot be empty or spaces");
 			return;
 		}
 		 
 		// authentication check
-		checkCredentials(username, password);
+		checkCredentials(email, password);
 			
 	}
 	@SuppressWarnings("unused")
-	public void checkCredentials(String username, String password) {
-		Boolean isValid = model.getCredentials(username, password);
+	public void checkCredentials(String email, String password) {
+		Boolean isValid = model.getCredentials(email, password);
 		if (!isValid) {
 			lblError.setText("User does not exist!");
 			return;
@@ -78,4 +78,33 @@ public class LoginController {
 		}
 
 	}
+	
+	public void signup() {
+		 //System.exit(0);
+		try {
+			AnchorPane root;
+			root= (AnchorPane) FXMLLoader.load(getClass().getResource("/views/RegisterView.fxml"));
+			Main.stage.setTitle("Register");
+			Scene scene = new Scene(root);
+			Main.stage.setScene(scene);			
+		} catch (Exception e) {
+			System.out.println("Error occured while inflating view: " + e);
+		}
+	}
+
+	public void addBeverages() {
+		try {
+		AnchorPane root;
+		root = (AnchorPane)  FXMLLoader.load(getClass().getResource("/views/addBeverages.fxml"));
+				Main.stage.setTitle("Add Movie View");
+			Scene scene = new Scene(root);
+			Main.stage.setScene(scene);
+		} catch (Exception e) {
+			System.out.println("Error occured while inflating view: " + e);
+		}
 }
+	
+}
+
+
+

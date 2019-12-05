@@ -19,7 +19,7 @@
       <Label contentDisplay="TOP" layoutX="286.0" layoutY="40.0" minHeight="-Infinity" prefHeight="30.0" prefWidth="58.0" style="-fx-background-color: maginta;" text="Statistics" underline="true" wrapText="true" />
       <ImageView fitHeight="125.0" fitWidth="99.0" layoutX="52.0" layoutY="269.0">
          <image>
-            <Image url="@../../../../Desktop/snacks.PNG" />
+            <Image url="@../../../../../Desktop/snacks.PNG" />
          </image>
       </ImageView>
    </children>

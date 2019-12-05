@@ -11,18 +11,18 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
    <children>
-      <Label layoutX="130.0" layoutY="116.0" text="USERNAME" />
+      <Label layoutX="130.0" layoutY="116.0" text="EMAIL" />
       <Label layoutX="129.0" layoutY="159.0" text="PASSWORD" />
       <Label fx:id="lblError" layoutX="61.0" layoutY="333.0" />
-      <TextField fx:id="txtUsername" layoutX="255.0" layoutY="112.0" />
+      <TextField fx:id="txtEmail" layoutX="255.0" layoutY="112.0" />
       <Button layoutX="255.0" layoutY="264.0" mnemonicParsing="false" onAction="#login" text="SUBMIT" />
       <PasswordField fx:id="txtPassword" layoutX="255.0" layoutY="155.0" />
       <Label alignment="TOP_CENTER" layoutX="295.0" layoutY="40.0" scaleX="2.0" scaleY="2.0" text="LOGIN" />
-      <Button layoutX="336.0" layoutY="264.0" mnemonicParsing="false" text="SIGNUP" />
+      <Button layoutX="336.0" layoutY="264.0" mnemonicParsing="false" onAction="#signup" text="SIGNUP" />
       <Hyperlink layoutX="255.0" layoutY="200.0" text="Forgot Password?" />
-      <ImageView fitHeight="82.0" fitWidth="119.0" layoutX="484.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="76.0" fitWidth="83.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Pictures/customer-clipart.jpg" />
+            <Image url="@../../../../../Pictures/customer-clipart.jpg" />
          </image>
       </ImageView>
    </children>
